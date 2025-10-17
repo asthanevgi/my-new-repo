@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Planners - Home</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body style="background-color: burlywood;">
+    <div class="banner">
+        <img src="/images/banner.gif" alt="Banner" style="width: 100%; height: 250px;">
+    </div>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <a class="nav-brand me-3" href="/home.html">
+                    <img class="rounded-circle" src="/images/brand.png" alt="image1" width="55px" height="50px">
+                </a>
+            </div>
+            <ul class="navbar-nav d-flex justify-content-center">
+                <li class="nav-item active"><a class="nav-link" href="/home.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="/aboutus.html">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link" href="/services.html">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link" href="/packages.html">PACKAGES</a></li>
+                <li class="nav-item"><a class="nav-link" href="/bookings.html">YOUR BOOKINGS</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact.html">CONTACT US</a></li>
+                <li class="nav-item"><a class="nav-link" href="/career.html">CAREER</a></li>
+            </ul>
+            <div class="ms-3">
+                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                    <i class="fa-solid fa-calculator"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="calculatorModalLabel">Calculate Your Budget</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <label>Add Service:</label>
+                    <input type="number" id="service" class="form-control" placeholder="Enter value">
+                    <label class="mt-2">Add Package:</label>
+                    <input type="number" id="package" class="form-control" placeholder="Enter value">
+                    <button class="btn btn-primary mt-3" onclick="calculate()">Calculate</button>
+                    <p class="mt-3"><strong>Result:</strong> <h3 id="result"></h3></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="fw-bold">Welcome to Prestige Planners</h1>
+                    <p class="text">In the vibrant world of events, every moment matters. At Prestige Planners Goa, we create unforgettable experiences that go beyond expectations. Whether it's a dreamy beach wedding, a grand corporate gathering, or a lively social celebration, our expert team brings your vision to life with creativity and precision. With a deep passion for perfection and a commitment to excellence, we plan every detail. Let us turn your special occasion into an extraordinary experience.</p>
+                    <div><a href="/aboutus.html" class="btn btn-dark">Explore More About Us</a></div>
+                </div>
+                <div class="col-md-6">
+                    <img src="/images/welcome.jpg" alt="Welcome to Prestige Planners" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <h2 class="text-center fw-bold">Hire Us for Any of These Services</h2>
+            <p class="text text-center ">With expertise and years of experience in these services, we've successfully managed numerous events in Goa, ensuring excellence and client satisfaction every time.</p>
+            <div class="row">
+                <div class="col-md-4 service-item">
+                    <img src="/images/camlogo.png" width="200px" height="150px">
+                    <h3>Photography & Videography</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="/images/decologo.png" width="200px" height="150px">
+                    <h3>Design & Décor</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="/images/musiclogo.png" width="200px" height="150px">
+                    <h3>Entertainment & Music</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="/images/foodlogo.png" width="200px" height="150px">
+                    <h3>Food & Beverages</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="/images/guesstlogo.png" width="200px" height="150px">
+                    <h3>Guest Management</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="/images/weddinglogo.png" width="200px" height="150px">
+                    <h3>Wedding Stationery</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="/images/djlogo.png" width="200px" height="150px">
+                    <h3>Dj Services</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="/images/bandlogo.png" width="200px" height="150px">
+                    <h3>Live Band Service</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="/images/venuelogo.png" width="150px" height="150px">
+                    <h3>Venue Selection</h3>
+                    <a href="/services.html" class="btn btn-dark">Know More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image">
+        <div class="container">
+            <h2 class="text-center fw-bold">Best Picks</h2><br>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="/images/slide1.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 1"></div>
+                    <div class="carousel-item"><img src="/images/slide2.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 2"></div>
+                    <div class="carousel-item"><img src="/images/slide3.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 3"></div>
+                    <div class="carousel-item"><img src="/images/slide4.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 4"></div>
+                    <div class="carousel-item"><img src="/images/slide5.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 5"></div>
+                    <div class="carousel-item"><img src="/images/slide6.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 6"></div>
+                    <div class="carousel-item"><img src="/images/slide7.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 7"></div>
+                    <div class="carousel-item"><img src="/images/slide8.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 8"></div>
+                    <div class="carousel-item"><img src="/images/slide9.jpg" class="d-block mx-auto" width="500px" height="300px" alt="Slide 9"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center p-4 contact">
+                    <h2 class="text-center fw-bold">Contact Us</h2>
+                    <p class="text text-center">If you are looking for a team to alleviate your event or celebrations, get in touch with us.<br>We'd love to hear from you!</p>
+                    <div class="text-center"><a href="/contact.html" class="btn btn-dark">Get In Touch</a></div>
+                </div>
+                <div class="col-md-6 text-center p-4 contact">
+                    <h2 class="text-center fw-bold">Join Our Team</h2>
+                    <p class="text text-center">Do You want To Work With Us!<br>If you are talented enough than you can join our team and have a bright future</p>
+                    <div class="text-center"><a href="/career.html" class="btn btn-dark">Apply Now</a></div>
+                </div>
+            </div>
+        </div>
+    </section> <br>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Prestige Planners. All rights reserved. <br>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> <br>Contact: 1122334455 | Email:<a href="#"> supportpp@gmail.com</a> <br><a href="/policy.html" class="text-warning">Privacy Policy</a></p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
